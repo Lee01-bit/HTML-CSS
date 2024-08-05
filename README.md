@@ -112,5 +112,9 @@ the uniqueness of an ID name ensures that there will always just be one element 
 
 content editable - allows interaction with the screen,keybaord and assistive devices
 "lang" - allows us to specify the language of the content 
-"Dir" - 
+"Dir" - explicitly indicates the direction in which the text flows, using "LTR" for left-to-right scripts and "RTL" for right-to-left scripts
+
+These attributes, "lang" and "dir," are considered Global Attributes and can be used on any HTML element.
+
+ARIA Roles
 
