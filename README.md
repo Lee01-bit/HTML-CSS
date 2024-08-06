@@ -24,7 +24,7 @@ or it can be used to distinguish a phrase or title
 - <.i> element is used to apply visual italics and the <em.> to add emphasis
 BOLD
 <strong.> element is used to show importance,seriousness or urgency
-<b> is more generic and neutral
+b is more generic and neutral
 
 HTML List
 there are 3 types of list: 
@@ -45,7 +45,7 @@ Definition List
 <dt.> which represents a Definition list 
 <dd.> which represent a Definiton Description , you can uses multiple <dd.> tags for each term
 <dl.> the entire list will be wrapped in <dl.>tag
-
+<hr>
 HTML Quotes
 
 <p.> for the paragraph
@@ -83,6 +83,8 @@ pre element(needs a opening and closing tag)
 Pre and code elements are often combined to display a code block with proper indentation
 to preserve the formatting and spacing 
 
+<hr>
+
 HTML Superscripts,Subscripts and Small Text
 
 Subscripts, superscripts, and small text can be used where you need to mark up certain bits of content as having a different meaning than the rest.
@@ -117,6 +119,8 @@ content editable - allows interaction with the screen,keybaord and assistive dev
 
 These attributes, "lang" and "dir," are considered Global Attributes and can be used on any HTML element.
 
+<hr>
+
 ARIA Roles
 They are like extra attributes that we can add to HTML elements to make them more meaningful and help browser understand what they represent.
 ARIA roles comes into play when we want to provide essential infromation ito assistive technologies like screen readers braille displays and magnifiers to ensure a website is fully accessible.
@@ -127,6 +131,8 @@ ARIA roles comes into play when we want to provide essential infromation ito ass
 The accessibility tree is like a companion to the DOM tree, which the browser creates from the website's content.While the DOM tree represents the structure of the HTML, the accessibility tree is crucial for assistive devices like screen readers
 
 To start, add an ARIA label to the HTML, which specifies the text that the screen reader will read. In this case, set the ARIA label to "hello world." Additionally, hide the individual letters by enclosing them within a div element and setting the ARIA hidden attribute to true. This removes the div and its contents from the accessibility tree while keeping them in the DOM tree. After reloading the page, the separate letter containers disappear, and we are left with a clear heading of "hello world."
+
+<hr>
 
 Formatting HTML
 comments start <!--"...."> comments should be inside your html so that whoever reads your code understands why you did it like that
@@ -139,6 +145,8 @@ this tells the browser not to break the line between two words. for example , if
 
 another use for it is if you want to create more than one space between a word 
 Developer mode is used to access the debugging mode of a web page
+
+<hr>
 
 HTML NAVIGATION and Linking
 
@@ -157,6 +165,8 @@ in the example above...say we want to create a link for logo.gif which is locate
 The first version, /images/logo.gif, creates a URL that is relative to the root level. It means the browser will start looking for the file from the root of the website. On the other hand, the second version, ../images/logo.gif, creates a URL that is relative to the location of the file where the URL is written. The ".." followed by a slash means going up one level in the directory structure
 
 One important thing to note is that it does not matter whether you include a trailing slash or not in a URL, both versions will take you to the same place.
+
+<hr>
 
 Relative and absolute URLs
 
@@ -179,14 +189,18 @@ use a footer element and a A element to create a footer
 
 HTML Working with Graphics and Images
 
+<hr>
+
 Images
 
-when we want to use images in our webpages we simpliar need to use the element IMG
+when we want to use images in our webpages we simpliar need to use the element IMG.IMG element only has a clsoing tag
 
 1.first we need to establish the source attribute,(SRC) it tells the browser which image file to load
 2.then there is a the (ALT), which provides a text description of a image, it is also used incase the image does not load.ALT can be left blank as well 
 
 3.then we have the width and height attributes , which determines the size of the image , Every image needs these 4 attributes.Dont forget to add the pixel as well to your sizes
+
+<hr>
 
 Image Formats
 there are 4 main file formats such as: GIF,SVG,JPG,PNG
@@ -201,4 +215,21 @@ PNG-it is a newer format that works well when you need transparency in a photogr
 
 Resposive Images
 
+HTML allows us to deliver different image files to screens of different sizes. We can create multiple image files and include them as options in our HTML code.Each entry includes a URL to the file, the resolution (e.g. 2X, 3X, 4X, 1.5X), and so on
 
+Resposive Width
+
+src set, where we can provide a set of images for different resolutions or let the browser choose based on density and viewport width.The sizes attribute allows us to specify how much of the viewport's width the image will take up at each breakpoint.
+
+Figcaption and Figures
+
+after you have inserted a imgage to your code , next you want to add a caption to it.Frist you would add a figcaption element to wrap the caption text you want and then wrap the whole image and caption in a Figure element
+
+<hr>
+
+Working with media 
+
+Audio
+audio controls src="audio file" and end with a closing tag 
+
+just like the img element we have a source attribute
