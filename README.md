@@ -66,7 +66,8 @@ It provides additional information to HTML elements,such as datetime attribute a
 it is written like <.time datetime=2025-05-08>May 8, 2025</.time>
 <time.> element is used to mark anything that specifies a time of day,date or a duration for example:
 <time.>May 8th</time> or <time.>May 8th 2025</.time>
-you can also combine the date adn time using the datetime attribute, first you would include the date and then the time.You can a couple of options to seperate them- you can use the T or simply leave a space.
+you can also combine the date and time using the datetime attribute, first you would include the date and then the time.You can a couple of options to seperate them- you can use the T or simply leave a space.
+it is not considered a global attribute
 
 HTML code, pre and br
 <(code></code.> )
@@ -103,9 +104,9 @@ as seen in the image above the small elment can be used to make a text or phrase
 
 
 HTML Attributes
-note. thta sonme attributes only work with some ,all dont work together
+note. that sonme attributes only work with some ,all dont work together
 
-Class- it is used to assign a reusable naem to any element, which can later be styled using CSS for all elments sharing that class
+Class- it is used to assign a reusable name to any element, which can later be styled using CSS for all elments sharing that class
 
 ID - the id is similiar to the class but we can only use unique names once an entire HTML page,IDs can be used for CSS targeting
 the uniqueness of an ID name ensures that there will always just be one element with that ID,making it useful for javaScript or links.
@@ -117,4 +118,87 @@ content editable - allows interaction with the screen,keybaord and assistive dev
 These attributes, "lang" and "dir," are considered Global Attributes and can be used on any HTML element.
 
 ARIA Roles
+They are like extra attributes that we can add to HTML elements to make them more meaningful and help browser understand what they represent.
+ARIA roles comes into play when we want to provide essential infromation ito assistive technologies like screen readers braille displays and magnifiers to ensure a website is fully accessible.
+
+![image](https://github.com/user-attachments/assets/24e72fbe-a109-4a3d-b85b-d47405b7fda4)
+<span> is used to mark up a part of text or part of a document
+
+The accessibility tree is like a companion to the DOM tree, which the browser creates from the website's content.While the DOM tree represents the structure of the HTML, the accessibility tree is crucial for assistive devices like screen readers
+
+To start, add an ARIA label to the HTML, which specifies the text that the screen reader will read. In this case, set the ARIA label to "hello world." Additionally, hide the individual letters by enclosing them within a div element and setting the ARIA hidden attribute to true. This removes the div and its contents from the accessibility tree while keeping them in the DOM tree. After reloading the page, the separate letter containers disappear, and we are left with a clear heading of "hello world."
+
+Formatting HTML
+comments start <!--"...."> comments should be inside your html so that whoever reads your code understands why you did it like that
+
+Self-closing elements 
+most elements in HTMl has a opening and closing tag.
+
+non-breaking spaces
+this tells the browser not to break the line between two words. for example , if we want to keep "lebron" and "James"together in a setence we would use the code "&nbsp"
+
+another use for it is if you want to create more than one space between a word 
+Developer mode is used to access the debugging mode of a web page
+
+HTML NAVIGATION and Linking
+
+when we want to create a link we use the A element , which stand for anchor. we then need to add the href attribute with the URL enclosed in a quote.
+
+HTML URL Pathways
+the slashes in a URL indicates that it should look further into the file structure.To create a relative URL, omit the domain name but include the initial slash at the beginning. This tells the browser to start from the root level of the file structure
+
+![image](https://github.com/user-attachments/assets/c20e68c7-1a16-4a7f-b68e-e6cf5330098d)
+
+in the example above...say we want to create a link for logo.gif which is located in the directory named styles,we would write the URL like such:
+
+/images/logo.gif 
+../images/logo.gif
+
+The first version, /images/logo.gif, creates a URL that is relative to the root level. It means the browser will start looking for the file from the root of the website. On the other hand, the second version, ../images/logo.gif, creates a URL that is relative to the location of the file where the URL is written. The ".." followed by a slash means going up one level in the directory structure
+
+One important thing to note is that it does not matter whether you include a trailing slash or not in a URL, both versions will take you to the same place.
+
+Relative and absolute URLs
+
+when you see a URL like http://www.awesomedogs.com/people, it is looking for a file called index.html inside the folder called people.
+
+Note. THIs only works for HTML files.
+
+To summarize, URLs can be either relative or absolute. Relative URLs are based on the current file's location, while absolute URLs start from the root of the website. By using folders and index.html files, we can create clean and user-friendly URLs. 
+
+Navigation
+Menus and Navigation bars
+to create a menu navigation , first you would create a NAV element to indicate that it is the sites navigation.next you would create a list using the LI element and a anchor element A to link each listed item with the correct URL
+
+Breadcrumb trail menu
+
+you would create it the same way but this time you would use a OL , since the order of the list matters
+
+Footer Links
+use a footer element and a A element to create a footer
+
+HTML Working with Graphics and Images
+
+Images
+
+when we want to use images in our webpages we simpliar need to use the element IMG
+
+1.first we need to establish the source attribute,(SRC) it tells the browser which image file to load
+2.then there is a the (ALT), which provides a text description of a image, it is also used incase the image does not load.ALT can be left blank as well 
+
+3.then we have the width and height attributes , which determines the size of the image , Every image needs these 4 attributes.Dont forget to add the pixel as well to your sizes
+
+Image Formats
+there are 4 main file formats such as: GIF,SVG,JPG,PNG
+
+GIF- GIFs are great for compressing illusttraions that have large areas of the same color,but when it comes to photographs it falls short because it only supports 256 colors and images can en up looking pixelated
+
+SVG- these formast are great for logos,icons and other types of illustrations.it is a vector file,which means it can be scaled to any size without losing quality and the file size remains small.
+
+JPG-when using JPG it is important to resize and compress them appropriately.Avoid using big images because it will slow down the loading speed.
+
+PNG-it is a newer format that works well when you need transparency in a photograph.
+
+Resposive Images
+
 
