@@ -233,3 +233,10 @@ Audio
 audio controls src="audio file" and end with a closing tag 
 
 just like the img element we have a source attribute
+
+HTML Generic Elements,Div and Span
+DIV were used to create sections,sidebars and evrything in between.Some developers even put their titles in divs and make spans pretend to be buttons.Div is a block-level element, while span is an inline element. They essentially do nothing until CSS or Javascript is applied to them
+
+Div would be used to create a section and whatever you do inside that block element it only applies inside that
+
+Span works the same way but only to a specifi line , the sentence wont break
