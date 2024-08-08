@@ -239,4 +239,56 @@ DIV were used to create sections,sidebars and evrything in between.Some develope
 
 Div would be used to create a section and whatever you do inside that block element it only applies inside that
 
-Span works the same way but only to a specifi line , the sentence wont break
+Span works the same way but only to a specifi line , the sentence wont break to the next line
+
+<hr>
+
+8 August 2024
+
+Document Head
+
+inside the document head you need to put important infromation that the browser needs to know about the website.The character set is not something you want your users to see, it is intended for the browser. To convey this, use the meta element.The Meta element should always be placed inside the head element as they provide the metadata about the webpage.
+
+The HTML head serves as a central hub for connecting and setting up various components, ensuring that all assets are loaded and sharing page information with other sites and platforms
+
+to define a character set you would use the 'meta charset="utf-8".
+
+Title element will appear on the browser tab or bookmark when it is saved.
+
+Link element -The link element is a crucial component used extensively within the head section. It serves to connect various assets that should load, such as CSS files, fonts, and favicons. To inform the browser about the type of asset, utilize the rel attribute.
+
+Link rel="icon" href="icon_location" type="image/icon type" - this is used to create a icon for your website
+
+![image](https://github.com/user-attachments/assets/a9712287-628f-4d60-84a9-72906c6e287e)
+The script tag is a commonly used element in an HTML document's head. It instructs the browser to load a JavaScript file. Although it is typically placed at the end of the document, some also include it in the head. 
+
+Content structure
+
+Main , header , footer,article . section, aside
+
+Main element - it is only used once per page,and tells the browser where the main content is
+
+Header-Do not confuse header with head though. Head is where the file's metadata lives and is not displayed to users. Header is used for site headers, article headers, and headers within the content. A header is usually found at the top of most web pages and may include a logo, site name, and navigation.
+
+Article-An article often starts with a title, subtitle, author's name, and publication date, which can also be considered a header. Many web pages end with a footer at the bottom, containing links, copyright information, and additional details about the company.The article element wraps around any type of content unit, whether it is a long written article, a short snippet, a teaser card, a tweet, or even an app element. It represents a standalone unit of content.
+
+Sections - The section element is used to mark sections of content. For example, in a long essay with subheadings, each segment can be wrapped in a section element. It is also useful for dividing different topic zones on a website. Each section typically starts with its own headline.
+
+Aside-Lastly, the aside element is for content that is off to the side, like sidebar information or additional details that accompany an article but are not part of its main flow.
+
+Forms
+
+To create a form, we start with the form element, which informs the browser about the presence of a form using opening and closing tags. In the newsletter signup form, there will be two fields: name and email. These field names can be turned into labels using the label element.Use the input element to provide places for users to input their name and email. Unlike other elements, the input element does not have a closing tag due to its older structure. It acts as a marker for the browser to bring in functionality and place it there.
+
+Now, a button is needed for users to submit the form. Use the button element for this. The text on the button can be customized to whatever is required.To make it accessible to everyone, we need to address the issue of the label and input elements not being connected. There are two options to achieve this. Add a "for" attribute to the label that matches the "id" attribute of the input. 
+Wrap the input with the label. 
+
+in order for the text boxes to work properly we need to add a type attribute to specify which type of data we need to collect from a user.placeholders attribute gives the user a example on what to type.The value attribute is for including such data in the form. If both are included into the example, and the form is submitted to compare the results, the information that was displayed by placeholder is not submitted as real data. The information that was pre-populated by value is
+
+HTML Tables
+
+To create an HTML table, you use several different HTML elements in just the right combination. Table, TR, TH, and TD.The table element wraps around the whole table, around all our content and markup for that table, marking the beginning and end of the table itself. The TR element stands for table row and wraps around a set of elements, defining them as belonging to the same row. The TH element stands for table header and defines a header for a column. The TD element stands for table data and marks up the cells of data. 
+
+![image](https://github.com/user-attachments/assets/60a692a7-8ae5-48e5-aac3-5ff98a3fee89)
+
+use TD element for the data of the table and for the heading you should use TH and the TR is for the amount of rows you want enclose all the content in a TABLE element
