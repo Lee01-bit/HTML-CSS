@@ -292,3 +292,6 @@ To create an HTML table, you use several different HTML elements in just the rig
 ![image](https://github.com/user-attachments/assets/60a692a7-8ae5-48e5-aac3-5ff98a3fee89)
 
 use TD element for the data of the table and for the heading you should use TH and the TR is for the amount of rows you want enclose all the content in a TABLE element
+
+
+
