@@ -4,6 +4,31 @@ The web consist of 3 types of programming languages
 -CSS
 -Javascript
 
+1.Basic structure to HTML document
+
+-<code>&lt;!Doctype html&gt;</code>
+
+-<code>&lt;html&gt;</code>
+
+-<code>&lt;head&gt;</code>
+
+-<code>&lt;body&gt;</code>
+
+Common HTML tags
+
+2. Common HTML Tags
+   
+HTML tags are the building blocks of a web page. Here are some of the most common tags:
+
+Headings (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>): Used to define headings, with <code>&lt;h1&gt;</code> being the most important and <code>&lt;h6&gt;</code> the least.
+
+Paragraphs <code>&lt;p&gt;</code>: Defines a block of text as a paragraph.
+
+Links <code>&lt;a&gt;</code>: Creates hyperlinks to other pages or resources. The href attribute specifies the destination URL.
+
+Images <code>&lt;img&gt;</code>: Embeds images into the page. The src attribute specifies the image source, and the alt attribute provides alternative text.
+
+
 Definitions
 Html
 HTML grants access to a wide range of built-in-browser fuctionalities that can utuilize by incoprating specific html code
